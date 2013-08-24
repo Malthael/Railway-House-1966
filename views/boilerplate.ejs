@@ -11,6 +11,7 @@
   <link href='//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css' rel='stylesheet' />
   <link href='//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css' rel='stylesheet' />
   <script type='text/javascript' src='/javascripts/jquery-2.0.3.min.js'></script>
+  <script type='text/javascript' src='/javascripts/bootstrap.min.js'></script>
   <script type='text/javascript' src='/javascripts/script.js'></script>
 
 
@@ -18,6 +19,7 @@
     $(document).ready(function() {
       $('.nav a[href=\'' + window.location.pathname + '\']').parent().addClass('active');
     });
+    // $('.dropdown-toggle').dropdown();
   </script>
 
 </head>
@@ -31,7 +33,14 @@
           <ul class='nav'>
             <li><a href='/'>首頁</a></li>
             <li><a href='/about'>關於我們</a></li>
-            <li><a href='/rooms'>客房介紹</a></li>
+            <li class='dropdown'>
+              <a href='#' class='dropdown-toggle' data-toggle='dropdown'>客房介紹 <b class='caret'></b></a>
+
+              <ul class='dropdown-menu'>
+                <li id='drop-item'><a id='text-left' href='/rooms/railway-house'>老舍軌 - Railway House</a></li>
+                <li id='drop-item'><a id='text-left' href='/rooms/fifty-blue'>五十藍 - Fifty Blue</a></li>
+              </ul>
+            </li>
             <li><a href='/locations'>所在位置</a></li>
             <li><a href='/scenes'>鄰近景點</a></li>
             <li><a href='/booking'>線上訂房</a></li>
@@ -46,9 +55,8 @@
     <hr class='soften'>
 
     <footer class='text-center'>
-      地址：台東市中華路一段 586 巷 72 號 ｜ 電話：0922-337519 ｜ 聯絡人：柚子<br />
-      Address: No.72, Ln. 586, Sec. 1, Zhonghua Rd., Taitung City ｜ Phone: 0922-337519 ｜ Contact: Jennifer<br />
-      Copyright © 2013 Railway House, All Rights Reserved.
+      <i class='icon-user'></i> 柚子 (Jennifer) ｜ <i class='icon-phone'></i> 0922-337519
+      <div class='pull-right'>Copyright © 2013 Railway House, All Rights Reserved.</div>
     </footer>
   </div>
 </body>

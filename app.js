@@ -32,6 +32,8 @@ if ('development' == app.get('env')) {
 app.get('/', routes.index);
 app.get('/about', routes.about);
 app.get('/rooms', routes.rooms);
+app.get('/rooms/railway-house', routes.railwayhouse);
+app.get('/rooms/fifty-blue', routes.fiftyblue);
 app.get('/locations', routes.locations);
 app.get('/scenes', routes.scenes);
 app.get('/booking', routes.booking);

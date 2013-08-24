@@ -15,6 +15,14 @@ exports.rooms = function(req, res) {
   res.render('rooms');
 }
 
+exports.railwayhouse = function(req, res) {
+  res.render('railwayhouse');
+}
+
+exports.fiftyblue = function(req, res) {
+  res.render('fiftyblue');
+}
+
 exports.locations = function(req, res) {
   res.render('locations');
 }

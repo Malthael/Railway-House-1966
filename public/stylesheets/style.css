@@ -11,6 +11,10 @@ a {
   color: #00B7FF;
 }
 
+[class^="icon-"]:before, [class*=" icon-"]:before {
+  margin-bottom: 10px;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1024px;
@@ -23,6 +27,14 @@ a {
   background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
   background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,.1), rgba(0,0,0,0));
   border: 0;
+}
+
+#drop-item {
+  width: auto;
+}
+
+#text-left {
+  text-align: left;
 }
 
 .navbar {
@@ -40,17 +52,21 @@ a {
   width: 100%;
   display: inline-block;
 }
+
 .navbar .nav li {
   width: 14.28%;
 }
+
 .navbar .nav li a {
   font-weight: bold;
   text-align: center;
 }
+
 .navbar .nav li:first-child a {
   border-left: 0;
   border-radius: 3px 0 0 3px;
 }
+
 .navbar .nav li:last-child a {
   border-right: 0;
   border-radius: 0 3px 3px 0;
