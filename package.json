@@ -1,0 +1,13 @@
+{
+  "name": "railway-house-1966",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "3.3.4",
+    "ejs": "*",
+    "ejs-locals": "~1.0.2"
+  }
+}

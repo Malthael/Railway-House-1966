@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang=zh-TW>
+
+<head>
+  <meta http-equiv='Content-Type' content='text/html'; charset='UTF-8' />
+  <meta name='author' content='Scott Yuan'>
+  <title>老舍･軌 Railway house</title>
+  <%-scripts%>
+  <%-stylesheets%>
+  <link href='/stylesheets/style.css' rel='stylesheet' type='text/css' />
+  <link href='//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css' rel='stylesheet' />
+  <link href='//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css' rel='stylesheet' />
+  <script type='text/javascript' src='/javascripts/jquery-2.0.3.min.js'></script>
+  <script type='text/javascript' src='/javascripts/script.js'></script>
+
+
+  <script>
+    $(document).ready(function() {
+      $('.nav a[href=\'' + window.location.pathname + '\']').parent().addClass('active');
+    });
+  </script>
+
+</head>
+
+<body>
+  <div class='container'>
+    <header class='header'>
+      <h1>老舍･軌 Railway house</h1>
+      <div class='navbar'>
+        <div class='navbar-inner'>
+          <ul class='nav'>
+            <li><a href='/'>首頁</a></li>
+            <li><a href='/about'>關於我們</a></li>
+            <li><a href='/rooms'>客房介紹</a></li>
+            <li><a href='/locations'>所在位置</a></li>
+            <li><a href='/scenes'>鄰近景點</a></li>
+            <li><a href='/booking'>線上訂房</a></li>
+            <li><a href='/feedback'>意見回饋</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+<%- body -%>
+
+    <hr class='soften'>
+
+    <footer class='text-center'>
+      地址：台東市中華路一段 586 巷 72 號 ｜ 電話：0922-337519 ｜ 聯絡人：柚子<br />
+      Address: No.72, Ln. 586, Sec. 1, Zhonghua Rd., Taitung City ｜ Phone: 0922-337519 ｜ Contact: Jennifer<br />
+      Copyright © 2013 Railway House, All Rights Reserved.
+    </footer>
+  </div>
+</body>
+
+<!-- 
+  <script type='text/javascript'>
+    if (navigator.appName == 'Microsoft Internet Explorer') {
+      window.alert('由於作者太遜，本網頁不支援 IE 瀏覽，請使用 Chrome 或 Firefox 取得最佳瀏覽效果，非常抱歉> <');
+    }
+
+    var menu = document.getElementsByClassName('menu')[0].getElementsByTagName('a');
+    for (var i = 0; i < menu.length; i++) {
+      if (/\/\w*$/.exec(menu[i].href) == window.location.pathname) {
+        menu[i].className = 'active';
+      }
+    }
+
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-42748827-1', 'twbbs.org');
+    ga('send', 'pageview');
+  </script>
+ -->
+
+</html>
