@@ -4,41 +4,44 @@
 <head>
   <meta http-equiv='Content-Type' content='text/html'; charset='UTF-8' />
   <meta name='author' content='Scott Yuan'>
-  <title>老舍･軌 Railway house</title>
+  <meta property='og:image' content='' />
+  <meta property='og:locale' content='zh_TW' />
+  <meta property='og:site_name' content='台東民宿 - 老舍･軌 Railway House' />
+  <meta property='og:description' content='老房子，鐵道邊，就稱之為老舍･軌，建於 1966 年的鐵路局宿舍。' />
+  <title>台東民宿 - 老舍·軌 Railway House</title>
   <%-scripts%>
   <%-stylesheets%>
   <link href='/stylesheets/style.css' rel='stylesheet' type='text/css' />
-  <link href='//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css' rel='stylesheet' />
-  <link href='//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css' rel='stylesheet' />
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css' />
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+  <link href='/stylesheets/font-awesome/css/font-awesome.min.css' rel='stylesheet' />
   <script type='text/javascript' src='/javascripts/jquery-2.0.3.min.js'></script>
-  <script type='text/javascript' src='/javascripts/bootstrap.min.js'></script>
-  <script type='text/javascript' src='/javascripts/script.js'></script>
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
 
 
   <script>
     $(document).ready(function() {
       $('.nav a[href=\'' + window.location.pathname + '\']').parent().addClass('active');
     });
-    // $('.dropdown-toggle').dropdown();
   </script>
 
 </head>
-
 <body>
   <div class='container'>
-    <header class='header'>
-      <h1>老舍･軌 Railway house</h1>
-      <div class='navbar'>
-        <div class='navbar-inner'>
-          <ul class='nav'>
+    <header>
+      <h1>老舍·軌 Railway House</h1>
+      <nav class="navbar navbar-default">
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
             <li><a href='/'>首頁</a></li>
             <li><a href='/about'>關於我們</a></li>
-            <li class='dropdown'>
-              <a href='#' class='dropdown-toggle' data-toggle='dropdown'>客房介紹 <b class='caret'></b></a>
-
-              <ul class='dropdown-menu'>
-                <li id='drop-item'><a id='text-left' href='/rooms/railway-house'>老舍軌 - Railway House</a></li>
-                <li id='drop-item'><a id='text-left' href='/rooms/fifty-blue'>五十藍 - Fifty Blue</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">客房介紹</b></a>
+              <ul class="dropdown-menu">
+                <li><a href='/rooms/railway-house'>老舍軌 - Railway House</a></li>
+                <li><a href="/rooms/fifty-blue">五十藍 - Fifty Blue</a></li>
+                <li class='divider'></li>
+                <li><a href="/rooms/cautions">住房須知</a></li>
               </ul>
             </li>
             <li><a href='/locations'>所在位置</a></li>
@@ -47,15 +50,17 @@
             <li><a href='/feedback'>意見回饋</a></li>
           </ul>
         </div>
-      </div>
+      </nav>
     </header>
 
+    <div id='content' class='container'>
 <%- body -%>
+    </div>
 
     <hr class='soften'>
 
     <footer class='text-center'>
-      <i class='icon-user'></i> 柚子 (Jennifer) ｜ <i class='icon-phone'></i> 0922-337519
+      <i class='icon-user'></i> 柚子 (Jennifer) · <i class='icon-phone'></i> 0922-337519
       <div class='pull-right'>Copyright © 2013 Railway House, All Rights Reserved.</div>
     </footer>
   </div>

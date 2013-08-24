@@ -1,2 +1,231 @@
 <% layout('boilerplate') -%>
-hello world!
+<% stylesheet('/stylesheets/rooms.css') -%>
+
+<section class='row'>
+  <section class='col-md-6 col-sm-6'>
+    <h4><i class='icon-flag'></i> 風格</h4>
+  </section>
+
+  <section class='col-md-6 col-sm-6'>
+    <h4><i class='icon-info-sign'></i> 細節</h4>
+
+    <table class='table table-condensed table-hover'>
+      <tbody>
+        <tr class='success'>
+          <td id='text-right'><i class='icon-leaf'></i> 床型</td>
+          <td><strong>上下舖</strong></td>
+        </tr>
+        <tr class='warning'>
+          <td id='text-right'><i class='icon-group'></i> 人數</td>
+          <td>共 8 個床位，可能會與其他客人同住</td>
+        </tr>
+        <tr class='active'>
+          <td id='text-right'><i class='icon-dollar'></i> 價格</td>
+          <td>每人每晚 NT$ 500</td>
+        </tr>
+        <tr class='success'>
+          <td id='text-right'><i class='icon-leaf'></i> 床型</td>
+          <td><strong>雙人雅房</strong></td>
+        </tr>
+        <tr class='warning'>
+          <td id='text-right'><i class='icon-group'></i> 人數</td>
+          <td>1 ~ 2 人
+        </tr>
+        <tr class='active'>
+          <td id='text-right'><i class='icon-dollar'></i> 價格</td>
+          <td>每晚 NT$ 800</td>
+        </tr>
+        <tr class='success'>
+          <td id='text-right'><i class='icon-leaf'></i> 床型</td>
+          <td><strong>四人雅房</strong></td>
+        </tr>
+        <tr class='warning'>
+          <td id='text-right'><i class='icon-group'></i> 人數</td>
+          <td>1 ~ 4 人
+        </tr>
+        <tr class='active'>
+          <td id='text-right'><i class='icon-dollar'></i> 價格</td>
+          <td>每晚 NT$ 2000</td>
+        </tr>
+        <tr class='danger'>
+          <td id='text-right'><i class='icon-map-marker'></i> 地址</td>
+          <td>台東市南昌街 112 巷 40 號 <a href='/locations'>點我看地圖 <i class='icon-share'></i></a></td>
+      </tbody>
+    </table>
+  </section>
+
+</section>
+
+<section>
+  <h4><i class='icon-camera'></i> 圖片介紹</h4>
+
+  <div class='row'>
+    <div class='col-md-8 col-sm-8'>
+      <div id='myCarousel' class='carousel slide'>
+        <!-- Carousel items -->
+        <div class='carousel-inner'>
+          <div class='item active' data-slide-number='0'>
+            <div id='inner-item'>
+              <img src='/images/fifty-blue/intro-1.jpg' />
+            </div>
+          </div>
+          <div class='item' data-slide-number='1'>
+            <div id='inner-item'>
+              <img src='/images/fifty-blue/intro-2.jpg' />
+            </div>
+          </div>
+          <div class='item' data-slide-number='2'>
+            <div id='inner-item'>
+              <img src='/images/fifty-blue/intro-3.jpg' />
+            </div>
+          </div>
+          <div class='item' data-slide-number='3'>
+            <div id='inner-item'>
+              <img src='/images/fifty-blue/intro-4.jpg' />
+            </div>
+          </div>
+          <div class='item' data-slide-number='4'>
+            <div id='inner-item'>
+              <img src='/images/fifty-blue/intro-5.jpg' />
+            </div>
+          </div>
+          <div class='item' data-slide-number='5'>
+            <div id='inner-item'>
+              <img src='/images/fifty-blue/intro-6.jpg' />
+            </div>
+          </div>
+          <div class='item' data-slide-number='6'>
+            <div id='inner-item'>
+              <img src='/images/fifty-blue/intro-7.jpg' />
+            </div>
+          </div>
+          <div class='item' data-slide-number='7'>
+            <div id='inner-item'>
+              <img src='/images/fifty-blue/intro-8.jpg' />
+            </div>
+          </div>
+          <div class='item' data-slide-number='8'>
+            <div id='inner-item'>
+              <img src='/images/fifty-blue/intro-9.jpg' />
+            </div>
+          </div>
+          
+        </div>
+        <!-- Carousel nav -->
+        <a class='carousel-control left' href='#myCarousel' data-slide='prev'>‹</a>
+        <a class='carousel-control right' href='#myCarousel' data-slide='next'>›</a>
+      </div>
+    </div>
+
+    <div class='col-md-4 col-sm-4'>
+      <div class='row' id='slider-thumbs'>
+        <div class='col-md-12 col-sm-12'>
+          <!-- Bottom switcher of slider -->
+          <ul class='thumbnails'>
+            <li class='col-md-4 col-sm-4'>
+              <a class='thumbnail' id='carousel-selector-0'>
+                <img src='/images/fifty-blue/thumbs/intro-1.jpg' />
+              </a>
+            </li>
+            <li class='col-md-4 col-sm-4'>
+              <a class='thumbnail' id='carousel-selector-1'>
+                <img src='/images/fifty-blue/thumbs/intro-2.jpg' />
+              </a>
+            </li>
+            <li class='col-md-4 col-sm-4'>
+              <a class='thumbnail' id='carousel-selector-2'>
+                <img src='/images/fifty-blue/thumbs/intro-3.jpg' />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class='row' id='slider-thumbs'>
+        <div class='col-md-12 col-sm-12'>
+          <!-- Bottom switcher of slider -->
+          <ul class='thumbnails'>
+            <li class='col-md-4 col-sm-4'>
+              <a class='thumbnail' id='carousel-selector-3'>
+                <img src='/images/fifty-blue/thumbs/intro-4.jpg' />
+              </a>
+            </li>
+            <li class='col-md-4 col-sm-4'>
+              <a class='thumbnail' id='carousel-selector-4'>
+                <img src='/images/fifty-blue/thumbs/intro-5.jpg' />
+              </a>
+            </li>
+            <li class='col-md-4 col-sm-4'>
+              <a class='thumbnail' id='carousel-selector-5'>
+                <img src='/images/fifty-blue/thumbs/intro-6.jpg' />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class='row' id='slider-thumbs'>
+        <div class='col-md-12 col-sm-12'>
+          <!-- Bottom switcher of slider -->
+          <ul class='thumbnails'>
+            <li class='col-md-4 col-sm-4'>
+              <a class='thumbnail' id='carousel-selector-6'>
+                <img src='/images/fifty-blue/thumbs/intro-7.jpg' />
+              </a>
+            </li>
+            <li class='col-md-4 col-sm-4'>
+              <a class='thumbnail' id='carousel-selector-7'>
+                <img src='/images/fifty-blue/thumbs/intro-8.jpg' />
+              </a>
+            </li>
+            <li class='col-md-4 col-sm-4'>
+              <a class='thumbnail' id='carousel-selector-8'>
+                <img src='/images/fifty-blue/thumbs/intro-9.jpg' />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class='row' id='slider-thumbs'>
+        <div class='col-md-12 col-sm-12'>
+          <!-- Bottom switcher of slider -->
+          <ul class='thumbnails'>
+            <li class='col-md-4 col-sm-4'>
+              <a class='thumbnail' id='carousel-selector-9'>
+                <img src='http://placehold.it/170x100&text=ten' />
+              </a>
+            </li>
+            <li class='col-md-4 col-sm-4'>
+              <a class='thumbnail' id='carousel-selector-10'>
+                <img src='http://placehold.it/170x100&text=eleven' />
+              </a>
+            </li>
+            <li class='col-md-4 col-sm-4'>
+              <a class='thumbnail' id='carousel-selector-11'>
+                <img src='http://placehold.it/170x100&text=twelve' />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+jQuery(document).ready(function($) {
+  $('#carousel-text').html($('#slide-content-0').html());
+ 
+  //Handles the carousel thumbnails
+  $('[id^=carousel-selector-]').click(function(){
+    var id_selector = $(this).attr('id');
+    var id = id_selector.substr(id_selector.lastIndexOf('-') + 1);
+    var id = parseInt(id);
+    $('#myCarousel').carousel(id);
+  });
+ 
+  // When the carousel slides, auto update the text
+  $('#myCarousel').on('slid', function (e) {
+    var id = $('.item.active').data('slide-number');
+    $('#carousel-text').html($('#slide-content-' + id).html());
+  });
+});
+</script>

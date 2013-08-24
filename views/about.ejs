@@ -1,12 +1,12 @@
 <% layout('boilerplate') -%>
 <% stylesheet('/stylesheets/about.css') -%>
 
-<section class='row-fluid'>
-  <div class='span4 text-center'>
+<section class='row'>
+  <div class='col-md-4 col-sm-4 text-center'>
       <img class='img-rounded img-door' src='images/railway-house/door.jpg' />
   </div>
 
-  <div class='span8'>
+  <div class='col-md-8 col-sm-8'>
     <h4><i class='icon-road'></i> 心路歷程</h4>
 
     <p>最近我做了一個重大的決定，辭掉工作準備中年轉業，<br />
@@ -49,6 +49,7 @@
 
 <script>
 $(document).ready(function() {
-  $('.span4').height($('.span8').height() - 2);
+  $('.col-md-4').height($('.col-md-8').height() * .8);
+  $('.col-sm-4').height($('.col-sm-8').height() * .8);
 });
 </script>

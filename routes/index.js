@@ -23,6 +23,10 @@ exports.fiftyblue = function(req, res) {
   res.render('fiftyblue');
 }
 
+exports.cautions = function(req, res) {
+  res.render('cautions');
+}
+
 exports.locations = function(req, res) {
   res.render('locations');
 }
