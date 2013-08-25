@@ -3,14 +3,14 @@
   font-size: 1.3em;
 }
 
-a > img {
+.intro-img {
   opacity: .7;
   -webkit-transition: all 0.2s ease-in;
   -moz-transition: all 0.2s ease-in;
   -o-transition: all 0.2s ease-in;
 }
 
-a > img:hover {
+.intro-img:hover {
   opacity: 1;
   -webkit-transition: all 0 ease-in;
   -moz-transition: all 0 ease-in;
