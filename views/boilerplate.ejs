@@ -13,41 +13,41 @@
   <%-stylesheets%>
   <link href='/stylesheets/style.css' rel='stylesheet' type='text/css' />
   <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css' />
-  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+  <link rel='stylesheet' href='//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css'>
   <link href='/stylesheets/font-awesome/css/font-awesome.min.css' rel='stylesheet' />
   <script type='text/javascript' src='/javascripts/jquery-2.0.3.min.js'></script>
-  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src='//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js'></script>
 
 
   <script>
     $(document).ready(function() {
-      $('.nav a[href=\'' + window.location.pathname + '\']').parent().addClass('active');
+      $('.nav a[href=\'' + window.location.pathname.match(/^\/[\w-]*/)  + '\']').parent().addClass('active');
     });
   </script>
 
 </head>
 <body>
   <div class='container'>
-    <header>
-      <h1>老舍·軌 Railway House</h1>
-      <nav class="navbar navbar-default">
-        <div class="collapse navbar-collapse navbar-ex1-collapse">
-          <ul class="nav navbar-nav">
+    <header class='container'>
+      <div class='navbar-header'><a class='navbar-brand' href='/'><i class='icon-linux'></i> 老舍·軌 Railway House</a></div>
+      <nav class='navbar pull-right'>
+        <div class='collapse navbar-collapse navbar-ex1-collapse'>
+          <ul class='nav navbar-nav'>
             <li><a href='/'>首頁</a></li>
             <li><a href='/about'>關於我們</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">客房介紹</b></a>
-              <ul class="dropdown-menu">
+            <li class='dropdown'>
+              <a href='/rooms' class='dropdown-toggle' data-toggle='dropdown'>客房介紹</b></a>
+              <ul class='dropdown-menu'>
                 <li><a href='/rooms/railway-house'>老舍軌 - Railway House</a></li>
-                <li><a href="/rooms/fifty-blue">五十藍 - Fifty Blue</a></li>
+                <li><a href='/rooms/fifty-blue'>五十藍 - Fifty Blue</a></li>
                 <li class='divider'></li>
-                <li><a href="/rooms/cautions">住房須知</a></li>
+                <li><a href='/rooms/cautions'>住房須知</a></li>
               </ul>
             </li>
             <li><a href='/locations'>所在位置</a></li>
             <li><a href='/scenes'>鄰近景點</a></li>
             <li><a href='/booking'>線上訂房</a></li>
-            <li><a href='/feedback'>意見回饋</a></li>
+            <!-- <li><a href='/feedback'>意見回饋</a></li> -->
           </ul>
         </div>
       </nav>

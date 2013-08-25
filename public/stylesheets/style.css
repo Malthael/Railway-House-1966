@@ -4,7 +4,7 @@ body {
   font-family: 'Roboto', 'ariel' !important;
   font-weight: 300;
   text-shadow: 0em 0em 0.11em #969696;
-  background-image: url('/images/texture/wood-1.png');
+  background-image: url('/images/texture/purty-wood.png');
   background-repeat: repeat;
 }
 
@@ -29,12 +29,60 @@ section > h4 {
   margin-bottom: 10px;
 }
 
+.navbar-brand {
+  font-size: 2.3em !important;
+  text-shadow: 0 1px 0 #fff;
+}
+
+.navbar-header > a {
+  text-decoration: none !important;
+}
+
+.navbar-header > a:hover,
+.navbar-header > a:visited {
+  color: black;
+}
+
+.navbar {
+  background-image: url('/images/texture/pool-table.png');
+  border-color: transparent !important;
+  margin-top: 1%;
+}
+
+.navbar .nav > li > a {
+  color: white;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+}
+
+.navbar .nav > .active > a,
+.navbar .nav > .open > a,
+.navbar .nav > li > a:hover {
+  /*font-size: 1.2em !important;*/
+  color: black !important;
+}
+
+.navbar .nav > .active,
+.navbar .nav > .open > a,
+.navbar .nav > li > a:hover,
+.navbar .nav > li > .dropdown-menu {
+  background-image: url('/images/texture/groovepaper.png');
+}
+
+.navbar .nav > li > a:hover {
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+}
+
 [class^="icon-"]:before, [class*=" icon-"]:before {
   margin-bottom: 10px;
 }
 
 #content {
   width: 98%;
+  margin-top: 2%;
 }
 
 .navbar-nav {
@@ -42,8 +90,8 @@ section > h4 {
 }
 
 .navbar-nav > li {
+  width: auto;
   text-align: center;
-  width: 14.28%;
 }
 
 .navbar-nav > li > ul > li {
