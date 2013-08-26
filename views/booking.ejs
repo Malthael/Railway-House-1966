@@ -151,7 +151,11 @@
       <div class='form-group'>
         <label class='control-label col-md-3 col-sm-4'></label>
         <div class='form-inline'>
-          <div class='col-md-4 col-sm-5'>
+          <div class='col-md-4 col-sm-4'>
+            <a href='/rooms/cautions'><button type='button' class='form-control btn btn-success'><i class='icon-info-sign'></i> 住房須知</button></a>
+          </div>
+
+          <div class='col-md-4 col-sm-4'>
             <button type='submit' class='form-control btn btn-primary'><i class='icon-ok'></i> 按此送出</button>
           </div>
         </div>
@@ -159,3 +163,11 @@
     </form>
   </section>
 </section>
+
+<script>
+  $(document).ready(function() {
+    if (document.body.clientWidth <= 980) {
+      $('button').addClass('btn-sm');
+    }
+  });
+</script>
