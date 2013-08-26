@@ -1,7 +1,8 @@
 body {
   height: 100%;
   padding: 50px;
-  font-family: 'Roboto', 'ariel' !important;
+  font-size: 1.5em !important;
+  font-family: 'Roboto', 'Microsoft Jhenghei', 'ariel' !important;
   font-weight: 300;
   text-shadow: 0em 0em 0.11em #969696;
   background-image: url('/images/texture/purty-wood.png');
@@ -58,6 +59,7 @@ section > h4 {
 }
 
 .navbar {
+  font-size: .9em;
   background-image: url('/images/texture/pool-table.png');
   border-color: transparent !important;
   margin-top: 1%;
@@ -116,5 +118,5 @@ section > h4 {
 }
 
 .text-em {
-  color: blue;
+  color: #0066CC;
 }

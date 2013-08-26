@@ -21,7 +21,11 @@
 
   <script>
     $(document).ready(function() {
-      $('.nav a[href=\'' + window.location.pathname.match(/^\/[\w-]*/)  + '\']').parent().addClass('active');
+        $('.nav a[href=\'' + window.location.pathname.match(/^\/[\w-]*/) + '\']').parent().addClass('active');
+
+      if (window.location.pathname.match(/^\/[\w-]*/) == '/rooms') {
+        $('.nav a[href=\'' + window.location.pathname + '\']').parent().addClass('active');
+      }
     });
   </script>
 

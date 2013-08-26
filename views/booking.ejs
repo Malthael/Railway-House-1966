@@ -2,7 +2,7 @@
 <% stylesheet('/stylesheets/booking.css') -%>
 
 <section class='row'>
-  <section class='col-md-6 col-sm-6'>
+  <section class='col-md-5 col-sm-5'>
     <h4><i class='icon-legal'></i> 訂金資訊</h4>
 
     <span class='text-em'>本民宿之訂金價格為折扣後總額之 30%</span><br /><br />
@@ -47,20 +47,20 @@
     </section>
   </section>
 
-  <section class='col-md-6 col-sm-6'>
+  <section class='col-md-7 col-sm-7'>
     <h4><i class='icon-pencil'></i> 訂房資料</h4>
 
     <blockquote>事先提醒您，<span class='text-em'><strong>您所預約的時間不一定有空房</strong></span>，送出表格之後，我們會在 24 小時之內與您聯絡！(當同一時間有多人預約時，將以填表時間優先順序決定)</blockquote>
 
     <form class='form-horizontal' action='doBooking' method='post' role='form'>
       <div class='form-group'>
-        <label class='control-label col-md-3 col-sm-4' for='name'>姓名</label>
+        <label class='control-label col-md-3 col-sm-3' for='name'>姓名</label>
         <div class='form-inline'>
           <div class='col-md-4 col-sm-4'>
             <input type='text' class='form-control' name='name' placeholder='Name' required />
           </div>
 
-          <div class='col-md-3 col-sm-4'>
+          <div class='col-md-3 col-sm-3'>
             <select class='form-control' id='sex' name='sex'>
               <option value='先生'>先生</option>
               <option value='小姐'>小姐</option>
@@ -70,30 +70,30 @@
       </div>
 
       <div class='form-group'>
-        <label class='control-label col-md-3 col-sm-4' for='phone'>電話</label>
+        <label class='control-label col-md-3 col-sm-3' for='phone'>電話</label>
 
         <div class='form-inline'>
-          <div class='col-md-5 col-sm-6'>
+          <div class='col-md-5 col-sm-5'>
             <input type='tel' class='form-control' name='phone' placeholder='Phone Number' required />
           </div>
         </div>
       </div>
 
       <div class='form-group'>
-        <label class='control-label col-md-3 col-sm-4' for='email'>E-mail</label>
+        <label class='control-label col-md-3 col-sm-3' for='email'>E-mail</label>
 
         <div class='form-inline'>
-          <div class='col-md-8 col-sm-8'>
+          <div class='col-md-9 col-sm-9'>
             <input type='email' class='form-control' name='email' placeholder='E-mail Address' />
           </div>
         </div>
       </div>
 
       <div class='form-group'>
-        <label class='control-label col-md-3 col-sm-4' for='housetype'>房間類型</label>
+        <label class='control-label col-md-3 col-sm-3' for='housetype'>房間類型</label>
 
         <div class='form-inline'>
-          <div class='col-md-5 col-sm-6'>
+          <div class='col-md-5 col-sm-5'>
             <select class='form-control' name='housetype'>
               <optgroup label='老舍。軌'>
                 <option value='老舍軌 - 通舖'>通舖</option>
@@ -109,47 +109,48 @@
       </div>
 
       <div class='form-group'>
-        <label class='control-label col-md-3 col-sm-4' for='numguest'>人數</label>
+        <label class='control-label col-md-3 col-sm-3' for='numguest'>人數</label>
 
         <div class='form-inline'>
-          <div class='col-md-3 col-sm-4'>
+          <div class='col-md-3 col-sm-3'>
             <input type='number' class='form-control' name='numguest' min='1' max='20' step='1' required />
           </div>
         </div>
       </div>
       
       <div class='form-group'>
-        <label class='control-label col-md-3 col-sm-4' for='checkin'>進房時間</label>
+        <label class='control-label col-md-3 col-sm-3' for='checkin'>進房時間</label>
 
         <div class='form-inline'>
-          <div class='col-md-6 col-sm-7'>
+          <div class='col-md-4 col-sm-5'>
             <input type='date' class='form-control' name='checkin' required />
           </div>
         </div>
       </div>
     
       <div class='form-group'>
-        <label class='control-label col-md-3 col-sm-4' for='checkin'>退房時間</label>
+        <label class='control-label col-md-3 col-sm-3' for='checkin'>退房時間</label>
 
         <div class='form-inline'>
-          <div class='col-md-6 col-sm-7'>
+          <div class='col-md-4 col-sm-5'>
             <input type='date' class='form-control' name='checkout' required />
           </div>
         </div>
       </div>
     
       <div class='form-group'>
-        <label class='control-label col-md-3 col-sm-4' for='other'>備註</label>
+        <label class='control-label col-md-3 col-sm-3' for='other'>備註</label>
 
         <div class='form-inline'>
-          <div class='col-md-9 col-sm-8'>
+          <div class='col-md-9 col-sm-9'>
             <textarea class='form-control' name='other' placeholder='幫忙安排行程、加床等或是其他住房問題請在此提出'></textarea>
+            <p class='help-block'>若無法填寫請改用 Chrome 或 Firefox</p>
           </div>
         </div>
       </div>
 
       <div class='form-group'>
-        <label class='control-label col-md-3 col-sm-4'></label>
+        <label class='control-label col-md-3 col-sm-3'></label>
         <div class='form-inline'>
           <div class='col-md-4 col-sm-4'>
             <a href='/rooms/cautions'><button type='button' class='form-control btn btn-success'><i class='icon-info-sign'></i> 住房須知</button></a>
