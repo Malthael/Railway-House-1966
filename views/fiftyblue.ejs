@@ -49,7 +49,7 @@
         </tr>
         <tr class='danger'>
           <td id='text-right'><i class='icon-map-marker'></i> 地址</td>
-          <td>台東市南昌街 112 巷 40 號 <a href='/locations'>點我看地圖 <i class='icon-share'></i></a></td>
+          <td><a href='/locations'>台東市南昌街 112 巷 40 號 <i class='icon-share'></i></a></td>
       </tbody>
     </table>
   </section>
@@ -60,8 +60,19 @@
   <h4><i class='icon-camera'></i> 圖片介紹</h4>
 
   <div class='row'>
-    <div class='col-md-8 col-sm-8'>
+    <div class='col-md-12 col-sm-12'>
       <div id='myCarousel' class='carousel slide'>
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+          <li data-target="#myCarousel" data-slide-to="3"></li>
+          <li data-target="#myCarousel" data-slide-to="4"></li>
+          <li data-target="#myCarousel" data-slide-to="5"></li>
+          <li data-target="#myCarousel" data-slide-to="6"></li>
+          <li data-target="#myCarousel" data-slide-to="7"></li>
+          <li data-target="#myCarousel" data-slide-to="8"></li>
+        </ol>
         <!-- Carousel items -->
         <div class='carousel-inner'>
           <div class='item active' data-slide-number='0'>
@@ -72,21 +83,37 @@
           <div class='item' data-slide-number='1'>
             <div id='inner-item'>
               <img src='/images/fifty-blue/intro-2.jpg' />
+
+              <div class='carousel-caption'>
+                <h4>一樓客廳</h4>
+              </div>
             </div>
           </div>
           <div class='item' data-slide-number='2'>
             <div id='inner-item'>
               <img src='/images/fifty-blue/intro-3.jpg' />
+
+              <div class='carousel-caption'>
+                <h4>上下舖</h4>
+              </div>
             </div>
           </div>
           <div class='item' data-slide-number='3'>
             <div id='inner-item'>
               <img src='/images/fifty-blue/intro-4.jpg' />
+
+              <div class='carousel-caption'>
+                <h4>四人雅房</h4>
+              </div>
             </div>
           </div>
           <div class='item' data-slide-number='4'>
             <div id='inner-item'>
               <img src='/images/fifty-blue/intro-5.jpg' />
+
+              <div class='carousel-caption'>
+                <h4>三樓公共空間</h4>
+              </div>
             </div>
           </div>
           <div class='item' data-slide-number='5'>
@@ -112,120 +139,27 @@
           
         </div>
         <!-- Carousel nav -->
-        <a class='carousel-control left' href='#myCarousel' data-slide='prev'>‹</a>
-        <a class='carousel-control right' href='#myCarousel' data-slide='next'>›</a>
-      </div>
-    </div>
-
-    <div class='col-md-4 col-sm-4'>
-      <div class='row' id='slider-thumbs'>
-        <div class='col-md-12 col-sm-12'>
-          <!-- Bottom switcher of slider -->
-          <ul class='thumbnails'>
-            <li class='col-md-4 col-sm-4'>
-              <a class='thumbnail' id='carousel-selector-0'>
-                <img src='/images/fifty-blue/thumbs/intro-1.jpg' />
-              </a>
-            </li>
-            <li class='col-md-4 col-sm-4'>
-              <a class='thumbnail' id='carousel-selector-1'>
-                <img src='/images/fifty-blue/thumbs/intro-2.jpg' />
-              </a>
-            </li>
-            <li class='col-md-4 col-sm-4'>
-              <a class='thumbnail' id='carousel-selector-2'>
-                <img src='/images/fifty-blue/thumbs/intro-3.jpg' />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class='row' id='slider-thumbs'>
-        <div class='col-md-12 col-sm-12'>
-          <!-- Bottom switcher of slider -->
-          <ul class='thumbnails'>
-            <li class='col-md-4 col-sm-4'>
-              <a class='thumbnail' id='carousel-selector-3'>
-                <img src='/images/fifty-blue/thumbs/intro-4.jpg' />
-              </a>
-            </li>
-            <li class='col-md-4 col-sm-4'>
-              <a class='thumbnail' id='carousel-selector-4'>
-                <img src='/images/fifty-blue/thumbs/intro-5.jpg' />
-              </a>
-            </li>
-            <li class='col-md-4 col-sm-4'>
-              <a class='thumbnail' id='carousel-selector-5'>
-                <img src='/images/fifty-blue/thumbs/intro-6.jpg' />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class='row' id='slider-thumbs'>
-        <div class='col-md-12 col-sm-12'>
-          <!-- Bottom switcher of slider -->
-          <ul class='thumbnails'>
-            <li class='col-md-4 col-sm-4'>
-              <a class='thumbnail' id='carousel-selector-6'>
-                <img src='/images/fifty-blue/thumbs/intro-7.jpg' />
-              </a>
-            </li>
-            <li class='col-md-4 col-sm-4'>
-              <a class='thumbnail' id='carousel-selector-7'>
-                <img src='/images/fifty-blue/thumbs/intro-8.jpg' />
-              </a>
-            </li>
-            <li class='col-md-4 col-sm-4'>
-              <a class='thumbnail' id='carousel-selector-8'>
-                <img src='/images/fifty-blue/thumbs/intro-9.jpg' />
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class='row' id='slider-thumbs'>
-        <div class='col-md-12 col-sm-12'>
-          <!-- Bottom switcher of slider -->
-          <ul class='thumbnails'>
-            <li class='col-md-4 col-sm-4'>
-              <a class='thumbnail' id='carousel-selector-9'>
-                <img src='http://placehold.it/170x100&text=ten' />
-              </a>
-            </li>
-            <li class='col-md-4 col-sm-4'>
-              <a class='thumbnail' id='carousel-selector-10'>
-                <img src='http://placehold.it/170x100&text=eleven' />
-              </a>
-            </li>
-            <li class='col-md-4 col-sm-4'>
-              <a class='thumbnail' id='carousel-selector-11'>
-                <img src='http://placehold.it/170x100&text=twelve' />
-              </a>
-            </li>
-          </ul>
-        </div>
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <i class="icon-prev"></i>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <i class="icon-next"></i>
+        </a>
       </div>
     </div>
   </div>
 </section>
 
-<script>
-jQuery(document).ready(function($) {
-  $('#carousel-text').html($('#slide-content-0').html());
- 
-  //Handles the carousel thumbnails
-  $('[id^=carousel-selector-]').click(function(){
-    var id_selector = $(this).attr('id');
-    var id = id_selector.substr(id_selector.lastIndexOf('-') + 1);
-    var id = parseInt(id);
-    $('#myCarousel').carousel(id);
-  });
- 
-  // When the carousel slides, auto update the text
-  $('#myCarousel').on('slid', function (e) {
-    var id = $('.item.active').data('slide-number');
-    $('#carousel-text').html($('#slide-content-' + id).html());
-  });
-});
-</script>
+<hr class='soften'>
+
+<section class='row'>
+  <div class='col-md-3 col-sm-3'></div>
+
+  <div class='col-md-3 col-sm-3'>
+    <a href='/rooms/cautions'><button type='button' class='form-control btn btn-primary'><i class='icon-zoom-in'></i> 詳閱住房須知</button></a>
+  </div>
+
+  <div class='col-md-3 col-sm-3'>
+    <a href='/booking'><button type='button' class='form-control btn btn-success'><i class='icon-shopping-cart'></i> 立即線上訂房</button></a>
+  </div>
+</section>

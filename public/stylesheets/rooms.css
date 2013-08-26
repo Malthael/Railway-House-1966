@@ -5,3 +5,12 @@
 #text-right {
   text-align: right;
 }
+
+li {
+  list-style: none;
+  list-style-type: none;
+}
+
+.thumb-holder {
+  margin-bottom: auto;
+}

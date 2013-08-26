@@ -3,6 +3,10 @@
   font-size: 1.3em;
 }
 
+#announce i {
+  color: black;
+}
+
 .intro-img {
   opacity: .7;
   /*-webkit-transition: all 0.2s ease-in;

@@ -23,6 +23,7 @@ footer {
 
 a {
   color: #00B7FF;
+  text-decoration: none !important;
 }
 
 section > h4 {
